@@ -1,3 +1,7 @@
+<img width="2160" height="1440" alt="MA2-BannerLogoFixed" src="https://github.com/user-attachments/assets/791e7b0e-c32a-4a85-9884-9ea314dff82b" />
+https://github.com/user-attachments/assets/264021d8-f86c-45ed-8f32-099cde2dcee9
+
+
 # MissionAir
 
 An open-source, self-piloted drone platform with onboard edge AI (object detection + embedding-based command matching) and server-side LLM reasoning over Tailscale.
@@ -19,7 +23,7 @@ Gimbal control is custom-built rather than using MAVSDK's gimbal plugin — MG90
 |---|---|
 | Frame | 3D-printed, ~240g, 500mm class |
 | Flight controller | Matek H743-SLIM V3 |
-| Companion computer | Raspberry Pi 5 (4GB) |
+| Companion computer | Raspberry Pi 5 (8GB) |
 | Edge AI accelerator | Hailo-8L AI HAT+ (13 TOPS) |
 | Battery | Generic 4S LiPo |
 | Power | Dedicated UBEC for Pi 5, separate from flight controller BEC |
@@ -32,7 +36,7 @@ Target build cost: ~$567 AUD.
 
 ## Software
 
-On-drone software is a C++ solution (`MissionAir Operative Software 1.0 LLM Integration`) covering:
+On-drone software is a C++ and Python solution (`MissionAir Operative Software 1.0 LLM Integration`) covering:
 
 - Gimbal control (`GimbalController` / `GimbalCommand` / `GimbalInput`)
 - Human/manual control input
@@ -45,10 +49,22 @@ LLM reasoning runs as a separate program on a self-hosted server, not embedded i
 ## Status
 
 Actively in development. Hardware and software architecture are still evolving as the build progresses.
+Not a representation of what will be in the final source code. Trials in progress, hardware testing, etc.
 
 ## Scope
 
 This project is built for civil-purpose use cases. Weapons-adjacent functionality is explicitly out of scope and will not be added.
+
+
+
+
+
+
+
+
+
+<img width="2160" height="2160" alt="MA2Small-FixedFavicon" src="https://github.com/user-attachments/assets/947f174d-5048-49f4-97e9-17e436bac426" />
+
 
 ## License
 
